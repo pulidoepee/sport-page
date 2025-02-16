@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sports Page</title>
+    <title>Página de Esgrima</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -42,33 +42,95 @@
             width: 100%;
             bottom: 0;
         }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 2rem;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 1rem;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to the Sports Page</h1>
+        <h1>Resultados y Estadísticas de Esgrima</h1>
     </header>
     <nav>
-        <a href="#football">Football</a>
-        <a href="#basketball">Basketball</a>
-        <a href="#tennis">Tennis</a>
+        <a href="#resultados">Resultados</a>
+        <a href="#estadisticas">Estadísticas</a>
     </nav>
     <main>
-        <section id="football">
-            <h2>Football</h2>
-            <p>Latest news and updates about football.</p>
+        <section id="resultados">
+            <h2>Resultados Recientes</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Fecha</th>
+                        <th>Competencia</th>
+                        <th>Ganador</th>
+                        <th>Perdedor</th>
+                        <th>Marcador</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>15/02/2025</td>
+                        <td>Campeonato Mundial</td>
+                        <td>Juan Pérez</td>
+                        <td>Carlos López</td>
+                        <td>15-10</td>
+                    </tr>
+                    <tr>
+                        <td>10/02/2025</td>
+                        <td>Copa del Mundo</td>
+                        <td>María García</td>
+                        <td>Lucía Fernández</td>
+                        <td>15-12</td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
-        <section id="basketball">
-            <h2>Basketball</h2>
-            <p>Latest news and updates about basketball.</p>
-        </section>
-        <section id="tennis">
-            <h2>Tennis</h2>
-            <p>Latest news and updates about tennis.</p>
+        <section id="estadisticas">
+            <h2>Mejores Esgrimistas del Mundo</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>País</th>
+                        <th>Victorias</th>
+                        <th>Derrotas</th>
+                        <th>Ranking</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Juan Pérez</td>
+                        <td>España</td>
+                        <td>50</td>
+                        <td>5</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>María García</td>
+                        <td>México</td>
+                        <td>45</td>
+                        <td>8</td>
+                        <td>2</td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
     </main>
     <footer>
-        <p>&copy; 2025 Sports Page. All rights reserved.</p>
+        <p>&copy; 2025 Página de Esgrima. Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>
